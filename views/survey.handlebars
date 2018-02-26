@@ -19,14 +19,14 @@
     <h4>Is this your first pet?</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
-      <option value="Yes">Yes (Strongly Agree)</option>
-      <option value="No">No</option>
+      <option value="5">Yes (Strongly Agree)</option>
+      <option value="4">No</option>
     </select>
 
     <h3><strong>Question 2</strong></h3>
     <h4>What type of home do you live in?</h4>
     <select class="chosen-select" id="q2">
-      <option value=""></option>
+      <option value=""></option>  
       <option value="House">House (Strongly Agree)</option>
       <option value="Condo">Condo</option>
     </select>
@@ -149,20 +149,15 @@
           name: $("#name").val(),
           email: $("#email").val(),
           zipcode: $("#zipcode").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val()
-          ]
+          scores: $("#q1").val()
+            
         };
         // AJAX post the data to the friends API.
         $.post("/api/submit", userData, function(data) {
           console.log("three");
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+          $("#match-name").text(data.breed);
+          $("#match-img").attr("src", data.img);
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
         });

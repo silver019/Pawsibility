@@ -16,7 +16,7 @@ app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
 app.set("view engine", "handlebars");
 
 
-controller(app);
+app.use('/', controller)
 
 app.listen(PORT, () => {
   console.log(`listening @ PORT: ${PORT}`);
