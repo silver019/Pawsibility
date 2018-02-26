@@ -1,25 +1,23 @@
 //DEPENDENCIES
 var express = require("express");
 var bodyParser = require("body-parser");
-var exphbs = require("express-handlebars");
-var db = require("./models");
+var handlebars = require("express-handlebars");
+var controller = require("./controllers/survey")
 var sequelize = require("sequelize");
+var app = express();
+var PORT =8000;
 
-//CREATING SERVER INSTANCE
-var app = express()
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-//SERVE STATIC CONTENT FOR APP FROM THE PUBLIC DIR IN THE APP DIR
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 
-//PARSE APP
-app.use(bodyParser.urlencoded({
-	extended: false
-}));
+app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
+app.set("view engine", "handlebars");
 
-//SETTING UP HANDLEBARS
-app.engine("handlebars", exphbs({
-	defaultLayout: "main"
-}));
 
-app.set("view engine", "handlebars"	);
-//STOPPED
+app.use('/', controller)
+
+app.listen(PORT, () => {
+  console.log(`listening @ PORT: ${PORT}`);
+});
