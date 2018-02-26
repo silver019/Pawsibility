@@ -5,7 +5,9 @@ var handlebars = require("express-handlebars");
 var controller = require("./controllers/survey")
 var sequelize = require("sequelize");
 var app = express();
-var PORT =8000;
+var PORT = 8000;
+
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
