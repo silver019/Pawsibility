@@ -78,8 +78,10 @@
 
   </div>
 
+  {{!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#results-modal">Open Modal</button> / --}}
+
   <!-- Modal -->
-  <div id="results-modal" class="modal fade" role="dialog">
+  <div id="results-modal" class="modal fade" role="dialog" >
     <div class="modal-dialog">
 
       <!-- Modal content-->
@@ -145,19 +147,24 @@
       if (validateForm()) {
         console.log("three");
         // Create an object for the user"s data
+
+        // Img link
+        // Decision up to you guys
         var userData = {
           name: $("#name").val(),
           email: $("#email").val(),
           zipcode: $("#zipcode").val(),
-          scores: $("#q1").val()
+          scores: $("#q1").val(),
+         // img: $("#q5").val()
             
         };
         // AJAX post the data to the friends API.
         $.post("/api/submit", userData, function(data) {
-          console.log("three");
+          // data from the server  {name: "", age:"", img:""}
+          console.log(data);
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.breed);
-          $("#match-img").attr("src", data.img);
+          $("#match-name").text(data.name); // populate to the model
+          $("#match-img").attr("src", data.email); // should be image link
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
         });

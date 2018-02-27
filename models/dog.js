@@ -5,20 +5,32 @@ module.exports = function(sequelize, DataTypes) {
       
       breed: {
         type: DataTypes.STRING,
-        allowNull: false
       },
 
       img: {
         type: DataTypes.STRING,
-        allowNull: false
       },
 
       score: {
         type: DataTypes.STRING,
-        allowNull: false
+      }, 
+
+      name:{
+        type:DataTypes.STRING,
+      },
+
+      email:{
+        type:DataTypes.STRING
+      },
+
+      zipcode:{
+        type:DataTypes.STRING
       }
+
 
      
     });
     return Dog;
   };
+
+  
