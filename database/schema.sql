@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS database_development;
 
 CREATE DATABASE database_development;
@@ -10,6 +11,10 @@ CREATE TABLE dogs(
  breed VARCHAR(100),
  img VARCHAR (255),
  score INT,
+ name VARCHAR(100),
+ zipcode VARCHAR (100),
+ email VARCHAR (100),
+ createdAt VARCHAT (100),
  PRIMARY KEY (id)
  
 

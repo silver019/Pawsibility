@@ -9,9 +9,11 @@ router.get('/', function (req, res) {
 });
 
 
+
 router.get("/api", function(req, res){
     db.Dog.findAll({})
         .then(function(results){
+            console.log(JSON.stringify(results) + "/api results")
                 res.json(results);
         })
 });
@@ -20,7 +22,6 @@ router.post('/api/submit', function (req, res) {
     console.log(req.body);
     var scores = parseInt(req.body['scores']);
     var totalScore = 0;
-    console.log(scores);
 
     for (var i = 0; i < scores; i++) {
 
@@ -37,20 +38,17 @@ router.post('/api/submit', function (req, res) {
     })
         .then(function (retreivedog) {
             // Matching Logic Here
-            res.json( {name: "", age:"", img:""}); // send the best match {name: "", age:"", img:""},
+            res.json( {
+                name:retreivedog.name,
+                email:retreivedog.email,
+                scores: retreivedog.scores,
+                zipcode:retreivedog.zipcode
+            }) // send the best match {name: "", age:"", img:""}
         })
        .catch(function(err){
             res.status(401).json({errro:"Error"})
         })
 
 });
-
-
-
-
-
-
-
-
 
 module.exports = router;

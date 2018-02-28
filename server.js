@@ -32,6 +32,6 @@ db.sequelize.sync({force: true})
         });
          console.log("Sequelize is starting");
     })
-    .catch(() => {
-        console.log("Error");
+    .catch((err) => {
+        console.log(err+"Error");
     })
