@@ -88,7 +88,7 @@ body {
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-brand {
       color: #062af7;
-      font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
       #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
         color: #062af7; }
     #mainNav .navbar-nav .nav-item .nav-link {
@@ -135,7 +135,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; }
+    background-size: contain; }
     header.masthead .intro-text {
       padding-top: 150px;
       padding-bottom: 100px; }
