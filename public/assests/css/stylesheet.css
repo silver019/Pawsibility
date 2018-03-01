@@ -129,8 +129,8 @@ body {
     text-align: center;
     color: white;
     background-image: url("../img/pawsibilitylogobg.png");
-    background-color: #f77206
     background-repeat: no-repeat;
+    background-color: #f77206;
     background-attachment: scroll;
     background-position: center center;
     -webkit-background-size: cover;
