@@ -507,5 +507,6 @@ body {
         background-color: #fed136; }
   
     .survey {
-        text-align: center
+        text-align: center;
+        background-color: #EC9605;
     }
