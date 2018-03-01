@@ -22,17 +22,26 @@
 
     <h3><strong>About You</strong></h3>
     <br>
+
+<div class="row">
+       
+<div class="col-lg-4 text-center">
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
-  <br>
+    </div>
+  <div class="col-lg-4 text-center"></div>
     <h4>Email (Required)</h4>
     <input type="text" id="email" class="form-control" required>
-  <br>
+    </div>
+  <div class="col-lg-4 text-center"></div>
     <h4>Zip Code (Required)</h4>
     <input type="num" id="zipcode" class="form-control" required>
+    </div>
+    </div>
 
     <hr>
-
+<div class="row">
+          <div class="col-lg-4 text-center">
     <h3><strong>Question 1</strong></h3>
     <h4>Is this your first pet?</h4>
     <select class="chosen-select" id="q1">
@@ -40,7 +49,9 @@
       <option value="3">Yes (Strongly Agree)</option>
       <option value="3">No</option>
     </select>
-  <br>
+  </div>
+
+  <div class="col-lg-4 text-center"></div>
     <h3><strong>Question 2</strong></h3>
     <h4>What type of home do you live in?</h4>
     <select class="chosen-select" id="q2">
@@ -48,7 +59,9 @@
       <option value="1">House (Strongly Agree)</option>
       <option value="2">Condo</option>
     </select>
-  <br>
+    </div>
+
+  <div class="col-lg-4 text-center"></div>
 
     <h3><strong>Question 3</strong></h3>
     <h4>Do you have a backyard?</h4>
@@ -57,7 +70,11 @@
       <option value="Yes">Yes (Strongly Agree)  </option>
       <option value="No">No</option>
     </select>
-  <br>
+    </div>
+  </div>
+
+  <div class="row">
+          <div class="col-lg-6 text-center">
 
     <h3><strong>Question 4</strong></h3>
     <h4>Where is your home located?</h4>
@@ -68,8 +85,9 @@
       <option value="Suburb">Suburb (Strongly Agree)</option>
       <option value="Country">Country</option>
      </select>
+     </div>
 
-  <br>
+  <div class="col-lg-6 text-center"></div>
     <h3><strong>Question 5</strong></h3>
     <h4>What size dog are you looking for?</h4>
     <select class="chosen-select" id="q5">
@@ -78,14 +96,17 @@
       <option value="Medium">Medium (Strongly Agree)</option>
       <option value="Big">Big</option>
     </select>
-  
+  </div>
+  </div>
 
     <br>
     <br>
-
+<div class="row">
+          <div class="col-lg-12 text-center">
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-xl text-uppercase btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    <button type="submit" class="btn btn-dark btn-xl text-uppercase btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
      Submit</button>
+     </div>
 
     <hr>
     <footer class="footer">
