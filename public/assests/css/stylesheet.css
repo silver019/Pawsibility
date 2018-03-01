@@ -47,6 +47,10 @@ body {
   .btn-xl {
     font-size: 18px;
     padding: 20px 40px; }
+
+    .btn-lg {
+        font-size: 18px;
+        padding: 0px 40px; }
   
   .btn-primary {
     background-color: #fed136;
@@ -130,7 +134,7 @@ body {
     color: white;
     background-image: url("../img/pawsibilitylogobg.png");
     background-repeat: no-repeat;
-    background-color: #f77206;
+    background-color: #EC9605;
     background-attachment: scroll;
     background-position: center center;
     -webkit-background-size: cover;
