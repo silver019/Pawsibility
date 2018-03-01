@@ -87,7 +87,7 @@ body {
       background-color: #f77206;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-brand {
-      color: #f77206;
+      color: #062af7;
       font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
       #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
         color: #062af7; }
@@ -99,7 +99,7 @@ body {
       color: #062af7;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
       #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-        color: #062af7; }
+        color: #f77206; }
   
   @media (min-width: 992px) {
     #mainNav {
