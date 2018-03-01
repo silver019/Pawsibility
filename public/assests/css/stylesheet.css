@@ -90,16 +90,16 @@ body {
       color: #f77206;
       font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
       #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-        color: #f77206; }
+        color: #062af7; }
     #mainNav .navbar-nav .nav-item .nav-link {
       font-size: 90%;
       font-weight: 400;
       padding: 0.75em 0;
       letter-spacing: 1px;
-      color: white;
+      color: #062af7;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
       #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-        color: #fed136; }
+        color: #062af7; }
   
   @media (min-width: 992px) {
     #mainNav {
