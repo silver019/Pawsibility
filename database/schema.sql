@@ -10,11 +10,7 @@ CREATE TABLE dogs(
  id INT NOT NULL AUTO_INCREMENT,
  breed VARCHAR(100),
  img VARCHAR (255),
- score INT,
- name VARCHAR(100),
- zipcode VARCHAR (100),
- email VARCHAR (100),
- createdAt VARCHAT (100),
+ score INT
  PRIMARY KEY (id)
  
 

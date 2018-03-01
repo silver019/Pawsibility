@@ -19,16 +19,16 @@
     <h4>Is this your first pet?</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
-      <option value="5">Yes (Strongly Agree)</option>
-      <option value="4">No</option>
+      <option value="3">Yes (Strongly Agree)</option>
+      <option value="3">No</option>
     </select>
 
     <h3><strong>Question 2</strong></h3>
     <h4>What type of home do you live in?</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>  
-      <option value="House">House (Strongly Agree)</option>
-      <option value="Condo">Condo</option>
+      <option value="1">House (Strongly Agree)</option>
+      <option value="2">Condo</option>
     </select>
 
 
@@ -92,13 +92,12 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-         {{!-- <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt=""> --}}
+         
           <h2 id="match-email"></h2>
           <h2 id="match-scores"></h2>
           <h2 id="match-zipcode"></h2>
           <h2 id="match-breed"></h2>
-          <h2 id="match-img"></h2>
-          <h2 id="match-scores"></h2>
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"  width="300px" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -160,27 +159,52 @@
           name: $("#name").val(),
           email: $("#email").val(),
           zipcode: $("#zipcode").val(),
-          scores: $("#q1").val(),
+          scores: [$("#q1").val(), $("#q2").val()]
+
          // img: $("#q5").val()
             
         };
         // AJAX post the data to the friends API
         $.post("/api/submit", userData, function(data) {
-          // data from the server  {name: "", age:"", img:""}
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name); // populate to the model
-          $("#match-email").text(data.email);
-          $("#match-scores").text(data.scores);
-          $("#match-zipcode").text(data.zipcode);
+          console.log(`Post: ${JSON.stringify(data)}`);
+
+        }).then(function(ownerdata){
+            console.log(`Then: ${JSON.stringify(ownerdata)}`);
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#match-name").text(ownerdata.name); // populate to the model
+            $("#match-email").text(ownerdata.email);
+            $("#match-scores").text(ownerdata.scores);
+            $("#match-zipcode").text(ownerdata.zipcode);
+
+            $.get("/api", function(dogdata) {
+              console.log(`Get dogs: ${JSON.stringify(dogdata)}`);
+              console.log(`Owner data in Get: ${JSON.stringify(ownerdata)} `);
+              
+              for (i=0; i < dogdata.length; i++) {
+
+                  if (dogdata[i].score == ownerdata.scores){
+                    console.log(`Dog Scores: ${dogdata[i].score}`);
+                    console.log(`Owner Score: ${ownerdata.scores}`);
+                    $("#match-breed").text(dogdata[i].breed);
+                    $("#match-img").attr("src", dogdata[i].img); // should be image link
+
+              } else {
+                    $("#match-breed").text(dogdata[i].breed);
+                    $("#match-img").attr("src", dogdata[i].img); // should be image link
+
+              }
+
+              }
+     
+
+                      // data from the server  {name: "", age:"", img:""}
+
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
         });
-        $.get("/api", function(data) {
-          $("#match-breed").text(data.breed);
-          $("#match-img").attr("src", data.img); // should be image link
-          $("match-scores").text(data.scores);
-        });
-      } else {
+          });
+      
+       } else {
         alert("Please fill out all fields before submitting!");
       }
     });
