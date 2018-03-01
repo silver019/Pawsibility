@@ -513,6 +513,9 @@ body {
 
     .survey img {
         width: 225px;
-        height: 225px;
-        border: 7px solid #fff; }
+        height: 225px;}
+    }
+
+    #name {
+        width: 150px;
     }
