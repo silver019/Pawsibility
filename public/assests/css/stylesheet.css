@@ -128,7 +128,7 @@ body {
   header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../assests/img/pawsibilitylogobg.png");
+    background-image: url("./assests/img/pawsibilitylogobg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
