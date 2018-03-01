@@ -76,7 +76,7 @@ body {
     -webkit-tap-highlight-color: #fed136; }
   
   #mainNav {
-    background-color: #212529; }
+    background-color: #f77206; }
     #mainNav .navbar-toggler {
       font-size: 12px;
       right: 0;
@@ -84,13 +84,13 @@ body {
       text-transform: uppercase;
       color: white;
       border: 0;
-      background-color: #fed136;
+      background-color: #f77206;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-brand {
-      color: #fed136;
+      color: #f77206;
       font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
       #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-        color: #fec503; }
+        color: #f77206; }
     #mainNav .navbar-nav .nav-item .nav-link {
       font-size: 90%;
       font-weight: 400;
@@ -128,7 +128,7 @@ body {
   header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../assets/img/pawsibilitylogobg.png");
+    background-image: url("../assests/img/pawsibilitylogobg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
