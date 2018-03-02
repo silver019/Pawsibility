@@ -23,3 +23,4 @@ https://powerful-chamber-63776.herokuapp.com/home
 
 ### Technologies Used
 ##### HTML5 | CSS | Javascript | JQuery | Bootstrap | Node.js | Express.js | MySQL | Nodemailer + Sendgrid 
+##### Nodemailer + Sendgrid where the new tecnologies presented. For more information visit https://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/nodejs.html .
