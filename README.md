@@ -13,7 +13,7 @@
 ### **Design 2-Email** 
 ##### Application was built out in modules. The email module allows new users to enter their name and email. Using new technologies Nodemailer + Sendgrid, user is automatically sent a welcome email based on input. User is now part of Pawsibility Family. Register using below link. Upon clicking "join" check your email for a welcome response. Note: check spam folder.
 
-**https://powerful-chamber-63776.herokuapp.com/home**
+##### **https://powerful-chamber-63776.herokuapp.com/home**
 
 ### Functionality
 ##### Very easy to use application. User answers predefined questions that will match up applicant to the right pet by rendering best pet match.
