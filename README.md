@@ -22,5 +22,5 @@
 ##### Frontend/BNR Developer Michael Castillo | Frontend Developer Elizabeth Bazan | Backend Developer Calvin Mendoza
 
 ### Technologies Used
-##### HTML5 | CSS | Javascript | JQuery | Bootstrap | Node.js | Express.js | MySQL | Nodemailer + Sendgrid 
+##### HTML5 | CSS | Javascript | JQuery | Bootstrap | Node.js | Express.js | MySQL | Nodemailer + Sendgrid | Heroku
 ##### Nodemailer + Sendgrid where the new tecnologies presented. For more information visit https://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/nodejs.html .
