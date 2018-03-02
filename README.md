@@ -1,5 +1,6 @@
 # Pawsibility Forever Home
-#### Mission: Right fitting a family with the right furbaby and right fitting a furbaby with the right family using a very easy to use application.
+#### Mission Pawsible
+##### Right fitting a family with the right furbaby and right fitting a furbaby with the right family using a very easy to use application.
 
                
 ![pawsibility250](https://user-images.githubusercontent.com/30742763/36911982-4b2305c6-1e13-11e8-990d-8d2019a28b05.png)
@@ -24,3 +25,13 @@
 ### Technologies Used
 ##### HTML5 | CSS | Javascript | JQuery | Bootstrap | Node.js | Express.js | MySQL | Nodemailer + Sendgrid | Heroku
 ##### Nodemailer + Sendgrid where the new tecnologies presented. For more information visit https://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/nodejs.html .
+
+### Future Enhancements
+  1. Email Authentication
+  2. Email Integration
+  3. Automated Newsletter
+  4. Andriod iOS versions
+  5. Blog
+  6. Online Adoption Application
+  
+  ###### **© 2018 Pawsibility All Rights Reserved Including All Artwork and Presentation Materials**
