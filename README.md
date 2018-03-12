@@ -20,7 +20,7 @@
 ##### Very easy to use application. User answers predefined questions that will match up applicant to the right pet by rendering best pet match.
 
 ## Collaboration: Team Pawsible
-##### Frontend/BNR Developer Michael Castillo | Frontend Developer Elizabeth Bazan | Backend Developer Calvin Mendoza
+##### Frontend/BNR Developer Michael Castillo | Fullstack Developer Elizabeth Bazan | Backend Developer Calvin Mendoza
 
 ## Technologies Used
 ##### HTML5 | CSS | Javascript | JQuery | Bootstrap | Node.js | Express.js | MySQL | Nodemailer + Sendgrid | Heroku
